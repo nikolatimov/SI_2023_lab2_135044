@@ -63,4 +63,17 @@ public class SILab2Test {
         List<User> allUsers = new ArrayList<>();
         SILab2.function(user,allUsers);
     }
+
+    @Test
+    public void test6() {
+
+        User user = new User("username_ex_1","lozinka123#","example_2@hotmail.com");
+        User user2 = new User("username_ex_3","lozinkaa-2","example_3@hotmail.com");
+        User user3 = new User("username_ex_2","google","example_4@hotmail.com");
+        List<User> allUsers = new ArrayList<>();
+        allUsers.add(user2);
+        allUsers.add(user3);
+        SILab2.function(user,allUsers);
+        assertEquals(SILab2.function(user,allUsers),true);
+    }
 }
